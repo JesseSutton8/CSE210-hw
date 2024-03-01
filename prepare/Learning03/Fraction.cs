@@ -5,27 +5,40 @@ public class Fraction {
     private int _top;
     private int _bottom;
 
+    public int GetTop() {
+        return _top;
+    }
+    public void SetTop(int newTop) {
+        _top = newTop;
+    }
+    public void SetBottom(int newBottom) {
+        _bottom = newBottom;
+    }
+    public int GetBottom() {
+        return _bottom;
+    }
+
     public Fraction() {
-        _top = 1;
-        _bottom = 1;
+        SetTop(1);
+        SetBottom(1);
     }
 
     public Fraction(int wholeNumber) {
-        _top = wholeNumber;
-        _bottom = 1;
+        SetTop(wholeNumber);
+        SetBottom(1);
     }
 
     public Fraction(int top, int buttom) {
-        _top = top;
-        _bottom = buttom;
+        SetTop(top);
+        SetBottom(buttom);
     }
 
     public string GetFractionString() {
-        return $"{_top}/{_bottom}";
+        return $"{GetTop()}/{GetBottom()}";
     }
 
     public double GetDecimalValue() {
-        return (double)_top / (double)_bottom;
+        return (double)GetTop() / (double)GetBottom();
     }
 
 }
