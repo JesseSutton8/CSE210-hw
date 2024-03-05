@@ -1,18 +1,24 @@
 public class Word {
-    private string wordText;
-    public string WordText {
-        get {return wordText;}
-        set {wordText = value;}
+
+    private string _word;
+    public string GetWord() {
+        return _word;
     }
-    private bool hidden;
-    public bool Hidden {
-        get {return hidden;}
-        set {hidden = value;}
+    public void SetWord(string newWord) {
+        _word = newWord;
+    }
+
+    private bool _hidden;
+    public bool GetHidden() {
+        return _hidden;
+    }
+    public void SetHidden(bool newHidden) {
+        _hidden = newHidden;
     }
 
     public Word(string text)
     {
-        wordText = text;
-        hidden = false;
+        _word = text;
+        _hidden = false;
     }
 }

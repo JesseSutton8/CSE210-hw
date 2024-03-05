@@ -34,4 +34,7 @@ public class Reference {
         _verse = verse;
     }
 
+    public void DisplayReference() {
+        Console.WriteLine($"{_book} {_chapter}:{_verse} \n");
+    }
 }
