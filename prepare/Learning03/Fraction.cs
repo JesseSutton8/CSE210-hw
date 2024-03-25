@@ -11,11 +11,11 @@ public class Fraction {
     public void SetTop(int newTop) {
         _top = newTop;
     }
-    public void SetBottom(int newBottom) {
-        _bottom = newBottom;
-    }
     public int GetBottom() {
         return _bottom;
+    }
+    public void SetBottom(int newBottom) {
+        _bottom = newBottom;
     }
 
     public Fraction() {
